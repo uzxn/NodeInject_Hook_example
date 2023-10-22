@@ -16,8 +16,8 @@ jobs:
           archive-name: NodeInject-linux.tar.gz
         - build: windows
           os: windows-2019
-          rust: nightly-x86_64-msvc
-          target: x86_64-pc-windows-msvc
+          rust: nightly-x86-msvc
+          target: x86-pc-windows-msvc
           archive-name: NodeInject-windows.7z
       fail-fast: false
 

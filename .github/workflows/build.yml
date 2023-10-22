@@ -17,7 +17,7 @@ jobs:
         - build: windows
           os: windows-2019
           rust: i586-pc-windows-msvc
-          target: x86-pc-windows-msvc
+          target: i586-pc-windows-msvc
           archive-name: NodeInject-windows.7z
       fail-fast: false
 

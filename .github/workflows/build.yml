@@ -11,7 +11,7 @@ jobs:
         include:
         - build: windows
           os: windows-2019
-          rust: i686-pc-windows-msvc
+          rust: nightly-x86_64-pc-windows-msvc
           target: i686-pc-windows-msvc
           archive-name: NodeInject-Windows.7z
       fail-fast: false

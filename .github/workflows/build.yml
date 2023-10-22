@@ -7,18 +7,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        build: [linux, windows]
+        build: [windows]
         include:
-        - build: linux
-          os: ubuntu-latest
-          rust: nightly
-          target: x86_64-unknown-linux-musl
-          archive-name: NodeInject-linux.tar.gz
         - build: windows
           os: windows-2019
-          rust: i586-pc-windows-msvc
-          target: i586-pc-windows-msvc
-          archive-name: NodeInject-windows.7z
+          rust: i686-pc-windows-msvc
+          target: i686-pc-windows-msvc
+          archive-name: NodeInject-Windows.7z
       fail-fast: false
 
     steps:
